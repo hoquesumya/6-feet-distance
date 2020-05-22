@@ -14,6 +14,7 @@
 #include<string>
 #include<stdexcept>
 #include<fstream>
+#include<new>
 Player::Player(){
     //score=5;
 
@@ -52,8 +53,8 @@ void Player::setSpriteforCharacters(){
     character3.setsprite(300,500);
     std::ifstream file;
     ///Pointer Dynamically allocated memory CSC-211H///
-    int *x=new int;
-    int *y=new int;
+    int *x;
+    int *y;
     try{
 
         file.open("file.txt");
@@ -61,6 +62,8 @@ void Player::setSpriteforCharacters(){
         {
             throw std::string("Error file opening");
         }
+        x=new int;
+        y=new int;
 
         file>>*x;
         file>>*y;
@@ -69,6 +72,10 @@ void Player::setSpriteforCharacters(){
     }
     catch(std::string message){
         std::cout<<message;
+
+    }
+    catch(std::bad_alloc){
+        std::cout<<"Can't allocate the memory"<<std::endl;
 
     }
     main.setposition(*x,*y);
@@ -83,6 +90,7 @@ void Player::setSpriteforCharacters(){
 
 }
 /**My code**/
+/**This will determine the distance between main and corona in feet**/
 double Player::getdistance_Corona(){
     float a,b;
     double Newx,Newy,d;
@@ -101,7 +109,7 @@ double Player::getdistance_Corona(){
 
 }
 /**My code**/
-/***This will determine the distance between main and subcharacter in feet**/
+/***This will determine the distance between main and sub character in feet**/
 /**Assume the distances are in inches**/
 double Player::getdistance_charac1(){
     float characterxpos= main.getx();
@@ -121,7 +129,7 @@ double Player::getdistance_charac1(){
 
 }
 /**My code**/
-/***This will determine the distance between main and subcharacter in feet**/
+/***This will determine the distance between main and sub character in feet**/
 /**Assume the distances are in inches**/
 double Player::getdis_charac2(){
     float characterxpos= main.getx();
@@ -181,7 +189,7 @@ double Player::getdis_character4(){
 
 
 }
-/**The below function is from lynda gaming tutorial except the exception handling**/
+/**The below function is from lynda gaming tutorial it will set the text to the Font.**/
 void Player::setMessages(){
     /**Exception Handling -have learned from class**/
     try{

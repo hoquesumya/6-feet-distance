@@ -23,6 +23,8 @@ private:
     Text sixfeet;
     Text endgame,sixfeet2,sixfeet3,gameinstruction,direc,keyIns1,KeyIns2,keyins3,gameins;
     Font font;
+    /**Boolean value in order to keep track of the status of the corona_attack,
+    distance between the sub characters**/
     bool paused=true;
     bool coronaattack=false;
     bool character1_6_feet=false;

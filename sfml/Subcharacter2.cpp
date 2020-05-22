@@ -7,6 +7,7 @@ using namespace sf;
 
 
 bool Subcharacter2::subcharatcer2Active=false;
+/**This function is for the random movement of the sub character1**/
 void Subcharacter2::move(){
     ///All of the code below are from lynda. Just modified the code///
      dt=clock.restart();

@@ -9,6 +9,7 @@ Subcharacter::Subcharacter(){
 
 bool Subcharacter::subcharatcerActive=false;
  ///All of the code below are from lynda. Just modified the code///
+ /**This function is for the random movement of the sub character1**/
 void Subcharacter::move(){
      dt=clock.restart();
 

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1590112944 source:c:\users\sumya\desktop\sfml\main.cpp
+1590116750 source:c:\users\sumya\desktop\sfml\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	<ctime>
@@ -469,7 +469,7 @@
 	<stdlib.h>
 	<string>
 
-1590002285 source:c:\users\sumya\desktop\sfml\maincharacter.cpp
+1590116750 source:c:\users\sumya\desktop\sfml\maincharacter.cpp
 	"Maincharacter.h"
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -527,7 +527,7 @@
 	<stdlib.h>
 	"MovingCharacter.h"
 
-1590108121 source:c:\users\sumya\desktop\sfml\player.cpp
+1590117734 source:c:\users\sumya\desktop\sfml\player.cpp
 	"Player.h"
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -544,6 +544,7 @@
 	<string>
 	<stdexcept>
 	<fstream>
+	<new>
 
 1590089963 c:\users\sumya\desktop\sfml\player.h
 	<SFML/Graphics.hpp>

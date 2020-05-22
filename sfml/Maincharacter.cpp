@@ -18,6 +18,7 @@ Maincharacter::Maincharacter(){
    Y=n;
 
 }
+
 void Maincharacter::moveright(){
 //
     setsprite(X++,Y);
@@ -36,6 +37,7 @@ void Maincharacter::movedown(){
     setsprite(X,Y++);
 
 }
+/**This function is for moving the main character using arrow key**/
 void Maincharacter::move(){
     Event e ;
 
